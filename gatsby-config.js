@@ -1,5 +1,5 @@
 const config = {
-  siteTitle: `Gatsby Typescript Starter`,
+  siteTitle: `Gatsby Typescript Blog Starter`,
   siteDescription: `Gatsby×TypeScriptのテンプレート`,
   siteUrl: `https://www.taikishiino.com`,
   siteLanguage: `ja`,
@@ -14,12 +14,39 @@ module.exports = {
   siteMetadata: config,
   plugins: [
     `gatsby-plugin-react-helmet`,
+    /**
+     * @markdownのパスを定義
+     */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/markdown/blogs`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+              showLineNumbers: true,
+              noInlineHighlight: false
+            }
+          }
+        ]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
