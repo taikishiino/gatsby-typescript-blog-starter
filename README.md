@@ -1,4 +1,5 @@
 # Gatsby×TypeScriptのMarkdownブログテンプレート
+このリポジトリは、 `gatsby new` したテンプレートをベースにTypeScript化・Markdownコンテンツ化したリポジトリになります。
 
 ## 🚀 Quick start
 
