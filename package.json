@@ -1,29 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-typescript-starter",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Gatsby×TypeScriptのテンプレート",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^2.21.22",
-    "gatsby-image": "^2.4.3",
-    "gatsby-plugin-manifest": "^2.4.2",
-    "gatsby-plugin-offline": "^3.2.1",
-    "gatsby-plugin-react-helmet": "^3.3.1",
-    "gatsby-plugin-sharp": "^2.6.2",
-    "gatsby-source-filesystem": "^2.3.1",
-    "gatsby-transformer-sharp": "^2.5.2",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
-  },
-  "devDependencies": {
-    "prettier": "2.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
+  "author": "Taiki Shiino <taiki.shiino@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -34,11 +14,24 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  "dependencies": {
+    "@types/react-helmet": "^6.0.0",
+    "gatsby": "^2.21.22",
+    "gatsby-image": "^2.4.3",
+    "gatsby-plugin-graphql-codegen": "^2.7.1",
+    "gatsby-plugin-manifest": "^2.4.2",
+    "gatsby-plugin-offline": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sharp": "^2.6.2",
+    "gatsby-source-filesystem": "^2.3.1",
+    "gatsby-transformer-sharp": "^2.5.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
   },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }
